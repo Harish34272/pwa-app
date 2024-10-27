@@ -1,0 +1,8 @@
+<div class="banner" *ngIf="showBanner">
+    <p>🎉 Get 30% off if you purchase more than 3 times! 🎉</p>
+    <button (click)="closeBanner()" class="close-button">✖</button>
+</div>
+<div *ngIf="!isOnline && showBanner" class="banner">
+    <p>🚨 You are offline. Some features may be unavailable. 🚨</p>
+    <button (click)="closeBanner()" class="close-button">✖</button>
+</div>
