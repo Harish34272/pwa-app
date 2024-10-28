@@ -124,7 +124,7 @@ export class MainpageComponent {
     : 'http://192.168.200.148:3000/api/user';
     //this.http.post(`${apiBaseUrl}/submitOrder`, payload).subscribe();
    // this.http.post('http://192.168.200.148:3000/api/user/submitOrder', payload).subscribe();
-    this.http.post('http://localhost:3000/api/user/submitOrder', payload).subscribe();
+    this.http.post('https://pwa-app-a400.onrender.com/api/user/submitOrder', payload).subscribe();
     
 
     
@@ -157,7 +157,7 @@ export class MainpageComponent {
         ? 'http://localhost:3000/api/user'
         : 'http://192.168.200.148:3000/api/user';
     
-      this.http.get('http://localhost:3000/api/user/getOrders')
+      this.http.get('https://pwa-app-a400.onrender.com/api/user/getOrders')
         .subscribe((data: any) => {
             this.orders = data; // Store the orders
             console.log('Orders retrieved:', this.orders);

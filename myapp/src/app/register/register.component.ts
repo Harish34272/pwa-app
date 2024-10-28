@@ -45,7 +45,7 @@ export class RegisterComponent {
     }
     const registerUserData = this.RegisterForm.value;
     this.httpClient
-      .post('http://localhost:3000/api/user/register', registerUserData)
+      .post('https://pwa-app-a400.onrender.com/api/user/register', registerUserData)
       .subscribe({
         next: (response) => {
           console.log(response);

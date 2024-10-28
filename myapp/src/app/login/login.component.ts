@@ -40,8 +40,7 @@ export class LoginComponent {
     : 'http://192.168.200.148:3000/api/user';
 
     this.httpClient
-      //.post(`${apiBaseUrl}/login`, loginData)
-      .post('http://localhost:3000/api/user/login', loginData)
+      .post('https://pwa-app-a400.onrender.com/api/user/login', loginData)
       .subscribe({
         next: (response: any) => {
           console.log(response);
