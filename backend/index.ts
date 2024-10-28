@@ -9,7 +9,7 @@ const expressAplication: Express = express();
 expressAplication.use(cors());
 const corsOptions = {
   //origin: ['http://localhost:4200','http://127.0.0.1:4200'], // Explicitly set the allowed origin
-  origin: 'https://pwa-4129czmm8-harishs-projects-a8ce05f4.vercel.app/#/', //
+  origin: 'https://pwa-app-iota.vercel.app', //
   credentials: true, // Allow credentials to be included in requests
   optionsSuccessStatus: 200 // For legacy browser support
 };
